@@ -1,0 +1,302 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(60, 43, 43);
+}
+
+
+
+.btn {
+    width: 130px;
+    border: none;
+    font-size: 1rem;
+    background-color: rgb(253, 253, 135);
+    opacity: 80%;
+    padding: .5em .5em;
+    margin: .5em;
+    border-radius: 40%;
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow:
+    0 0 10px 2px #fff986, 
+    0 0 20px 4px rgb(255, 231, 96), 
+    0 0 30px 8px #fff986; 
+  
+  }
+  
+  #highlight-btn{
+    position: fixed;
+    top: 4%;
+    left: 4%;
+    z-index: 998;
+  }
+
+  h3{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-size: x-large;
+    color: white;
+    opacity: 0;
+    z-index: 999;
+    font-weight: lighter;
+  }
+
+
+h4{
+    font-size: 17px;
+    width: 45%;
+    position: relative;
+    left: 5%;
+    text-decoration: underline;
+}
+
+h4:hover ~ .stick-note {
+    opacity: 1; 
+}
+
+.stick-note {
+    position: absolute;
+    top: 15%;
+    right: 140%;
+    background-color: rgb(253, 242, 178);
+    height: 300px;
+    width: 300px;
+    font-size: 1em;
+    border: 1px white solid;
+    transform: rotate(-15deg);
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.note{
+    margin-top: 6%;
+    margin-left: 5%;
+    position: relative;
+    top: 5%;
+    font-family:'Kalam';
+    font-size: x-large;
+}
+
+
+.pages1{
+    height: 740px;
+    width: 530px;
+    position: absolute;
+    top: 5%;
+    right: 11%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black ;
+    transform: rotate(-4deg);
+}
+
+
+.scroll-bg{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    margin: 2% auto;
+    padding: 20px;
+   position: absolute;
+   right: 10%;
+   top: 0%;
+   border-left: 20px solid black;
+   border: 2px black solid;
+
+}
+
+.scroll-div{
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    height: 700px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.scroll-object{
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    padding: 20px;
+
+}
+
+
+h1{
+    font-size: 2.5em;
+}
+
+p{
+    width: 45%;
+    position: relative;
+    left: 5%;
+
+}
+
+h5{
+    font-size: 17px;
+    width: 45%;
+    position: relative;
+    left: 5%;
+    font-weight: lighter;
+}
+
+.NEXT{
+    position: relative;
+    left: 5%;
+    bottom: 5%;
+    text-decoration: underline;
+}
+
+a:link {
+    color: rgb(0, 0, 0); 
+    text-decoration: none;
+    transition: .5s ease-in;
+}
+
+a:visited {
+    color: rgb(0, 0, 0); 
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 0, 0); 
+}
+
+.number{
+    position: relative;
+    left: 90%;
+    font-weight: bolder;
+}
+
+
+.kalam-regular {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @media screen and (max-width :800px){
+
+
+    .scroll-bg{
+        background-color: rgb(255, 255, 255);
+        width: 500px;
+        margin: 2% auto;
+        padding: 20px;
+        position: absolute;
+        left: 50%; 
+        top: 4%;
+        transform: translateX(-50%); 
+       border-left: 20px solid black;
+       border: 2px black solid;
+    
+    }
+
+    .stick-note {
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        background-color: rgb(253, 242, 178);
+        height: 200px;
+        width: 200px;
+        font-size: 1em;
+        border: 1px white solid;
+        transform: rotate(15deg);
+        opacity: 0;
+        transition: opacity 0.3s ease; 
+        z-index: 999;
+    }
+    
+    h3{
+        width: 400px;
+        height: 200px;
+        left: 50%; 
+        top: 100%;
+        transform: translateX(-50%); 
+        font-size: x-large;
+        color: white;
+        opacity: 0;
+        margin-bottom: 100px;
+      }
+
+      #highlight-btn{
+        position: fixed;
+        right: 2%;
+      }
+    
+        .note{
+            position: relative;
+            left: 5%;
+            top: 15%;
+            font-size: 15px;
+        }
+    
+    
+        .scroll-bg{
+            background-color: rgb(255, 255, 255);
+            width: 400px;
+            margin: 2% auto;
+            padding: 20px;
+            position: absolute;
+            left: 50%; 
+            top: 4%;
+            transform: translateX(-50%); 
+           border-left: 20px solid black;
+           border: 2px black solid;
+        
+        }
+    
+            .stick-note {
+                position: absolute;
+                top: 12%;
+                left: 40%;
+                background-color: rgb(253, 242, 178);
+                height: 200px;
+                width: 200px;
+                border: 1px white solid;
+                transform: rotate(15deg);
+                opacity: 0;
+                transition: opacity 0.3s ease; 
+                z-index: 999;
+            }
+        
+        
+        
+            .scroll-div{
+                width: 400px;
+                height: 600px;
+            }
+        
+            .scroll-object{
+                font-size: 14px;
+            }
+        
+            p{
+                width: 50%;
+            
+            }
+    
+            h4{
+                width: 50%;
+                font-size: 14px;
+            }
+        
+            h5{
+                width: 50%;
+                font-size: 14px;
+            }
+            .pages1{
+                position: absolute;
+                top: 45%; 
+                left: 45%; 
+                transform: translate(-50%, -50%) rotate(-2deg);
+                width: 400px;
+                height: 600px;
+            }
+              
+    
+  }
